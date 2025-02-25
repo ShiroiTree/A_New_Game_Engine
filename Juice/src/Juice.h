@@ -1,10 +1,11 @@
 
 
-#ifndef JUICE // 防止头文件被重复引用
-#define JUICE
+#pragma once
 
 
-#include "Core/Kerbol.h"
+#include "Core/include/Application.h"
+#include "Core/include/Log.h"
+
 
 extern Juice::Application *Juice::CreatApplication();
 
@@ -12,6 +13,8 @@ extern Juice::Application *Juice::CreatApplication();
 
 int main(int argc, char** argv)
 {
+    Juice::log::Init();
+
     auto app = Juice::CreatApplication();
     app->Run();
     delete app;
@@ -21,7 +24,4 @@ int main(int argc, char** argv)
 
 
 
-
-
-#endif
 

@@ -1,5 +1,5 @@
 
-#include "../../Juice/src/Juice.h"
+#include "Juice.h"
 
 
 class Sandbox : public Juice::Application
@@ -10,7 +10,12 @@ public:
     }
     ~Sandbox()
     {
-
+    }
+    void Run()
+    {
+        Juice::log::GetCoreLogger()->warn("Initialized Juice!");
+        Juice::log::GetClinicLogger()->info("The sandbox is running!");
+        while (true) {}
     }
 };
 

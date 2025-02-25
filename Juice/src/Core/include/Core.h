@@ -1,6 +1,5 @@
 
-#ifndef JUICE_CORE // 防止头文件被重复引用
-#define JUICE_CORE
+#pragma once
 
 
 
@@ -22,7 +21,6 @@
     #endif
 #endif
 
-#endif // 防止被重复引用
 
 
 

@@ -5,8 +5,8 @@ project(SandboxApp)
 add_definitions(-DPLATFORM_WINDOWS)
 
 
-aux_source_directory(../Juice/src IncludeSrc)
-include_directories(${IncludeSrc})
+include_directories(../Juice/src)
+include_directories(../Juice/libs/spdlog/include)
 
 find_library(Juice_LIB Juice lib)
 
