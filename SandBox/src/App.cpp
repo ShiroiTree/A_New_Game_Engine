@@ -13,8 +13,8 @@ public:
     }
     void Run()
     {
-        Juice::log::GetCoreLogger()->warn("Initialized Juice!");
-        Juice::log::GetClinicLogger()->info("The sandbox is running!");
+        JLC_Core_Warn("The logging is init!");
+        JLC_Info("Running!");
         while (true) {}
     }
 };

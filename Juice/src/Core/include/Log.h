@@ -7,8 +7,6 @@
 #include <memory>
 
 
-
-
 namespace Juice
 {
     class Juice_API log

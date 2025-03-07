@@ -1,0 +1,3 @@
+[submodule "Juice/libs/spdlog"]
+	path = Juice/libs/spdlog
+	url = https://github.com/gabime/spdlog.git

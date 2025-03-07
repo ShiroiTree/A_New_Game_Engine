@@ -26,9 +26,9 @@ namespace Juice{
     void log::Init()
     {
         spdlog::set_pattern("%^[%T] %n: %v%$");
-        sPtr_coreLogger = spdlog::stdout_color_mt("Juice");
+        sPtr_coreLogger = spdlog::stdout_color_mt("Core"); // for the engine
         sPtr_coreLogger->set_level(spdlog::level::trace);
-        sPtr_clinicLogger = spdlog::stdout_color_mt("Application");
+        sPtr_clinicLogger = spdlog::stdout_color_mt("Application"); // for the clinic
         sPtr_clinicLogger->set_level(spdlog::level::trace);
     }
 
